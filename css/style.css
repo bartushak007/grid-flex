@@ -6,7 +6,7 @@ body {
 
 /*grid*/
 
-.wrapper{
+.wrapper {
 	padding-top: 100px;
 	display: grid;
 	grid-template-columns: 100px 13fr 7fr;
@@ -19,7 +19,7 @@ body {
 	grid-gap: 1px;
 }
 
-.cell{
+.cell {
 	display: flex;
     justify-content: center;
     align-items: center;
@@ -91,17 +91,18 @@ body {
 
 /*flex-box*/
 
-.second-wrapper{
-	padding-top: 20px;
-	
-	
+.second-wrapper {
+	padding-top: 40px;
+	padding-bottom: 100px;	
 }
+
 .head {
 	width: 100%;
 	display: flex;
 	
 }
-.second-wrapper .cell:not(.second-nav):not(.second-menu):not(.second-footer){
+
+.second-wrapper .cell:not(.second-nav):not(.second-menu):not(.second-footer) {
 	border-right: 1px solid #000000;
 	border-bottom: 1px solid #000000;
 }
