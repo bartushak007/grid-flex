@@ -133,7 +133,8 @@ body {
 }
 
 .second-list {
-  flex-grow: 1
+  flex-grow: 1;
+  flex-basis: 0;
 }
 
 
