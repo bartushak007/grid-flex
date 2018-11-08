@@ -1,147 +1,150 @@
 body {	
-	background: #000000;
-	font-size: 23px;
-	color: #424242;
+  background: #000000;
+  font-size: 23px;
+  color: #424242;
+  margin: 0;
+  padding: 0;
 }
 
 /*grid*/
 
 .wrapper {
-	padding-top: 100px;
-	display: grid;
-	grid-template-columns: 100px 13fr 7fr;
-	grid-template-rows: 100px 300px 150px;
-	grid-template-areas: 
-		"l m m"
-		"n li nv"
-		"f f nv"
-	;
-	grid-gap: 1px;
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: 100px 13fr 7fr;
+  grid-template-rows: 100px 300px 150px;
+  grid-template-areas: 
+  	"l m m"
+  	"n li nv"
+  	"f f nv"
+  ;
+  grid-gap: 1px;
 }
 
 .cell {
-	display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .logo,
 .second-logo {
-	background: #f3c74a;
+  background: #f3c74a;
 }
 
 .menu,
 .second-menu {
-	background: #f62e22;	
+  background: #f62e22;	
 }
 
 .news,
 .second-news {
-	background: #ba6260;	
-	color: #ffffff;
+  background: #ba6260;	
+  color: #ffffff;
 }
 
 .list,
 .second-list {
-	background: #f3c74a;	
+  background: #f3c74a;	
 }
 
 .nav,
 .second-nav {
-	background: #424242;	
-	color: #ffffff;
+  background: #424242;	
+  color: #ffffff;
 }
 
 .footer,
 .second-footer {
-	background: #f3c74a;	
+  background: #f3c74a;	
 }
 
 
 .logo {	
-	grid-area: l;	
+  grid-area: l;	
 }
 
 .menu {	
-	grid-area: m;
+  grid-area: m;
 }
 
 .news {	
-	grid-area: n;	
+  grid-area: n;	
 }
 
 .list {	
-	grid-area: li;
+  grid-area: li;
 }
 
 .nav {
-	grid-area: nv;
-	
+  grid-area: nv;  
 }
 
 .footer {	
-	grid-area: f;
+  grid-area: f;
 }
 
 .text {
-	text-transform: uppercase;
-
+  text-transform: uppercase;
 }
 
 /*flex-box*/
 
 .second-wrapper {
-	padding-top: 40px;
-	padding-bottom: 100px;	
+  padding-top: 40px;
+  padding-bottom: 100px;	
 }
 
 .head {
-	width: 100%;
-	display: flex;
-	
+  width: 100%;
+  display: flex;	
 }
 
-.second-wrapper .cell:not(.second-nav):not(.second-menu):not(.second-footer) {
-	border-right: 1px solid #000000;
-	border-bottom: 1px solid #000000;
+.logo-border,
+.news-border,
+.list-border {
+  border-right: 1px solid #000000;
+  border-bottom: 1px solid #000000;
 }
 
 .second-logo {
-	width: 100px;
-	height: 100px;
+  width: 100px;
+  height: 100px;
 }
 
 .second-menu {
-	flex: 1;
-	border-bottom: 1px solid #000000;
+  flex-grow: 1;
+  border-bottom: 1px solid #000000;
 }
 .main-container {
-	display: flex;	
+  display: flex;	
 }
 .container {
-	flex-grow: 2;
-	display: flex;
-	flex-wrap: wrap;
+  flex-grow: 65;
+  flex-basis: 100px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .second-news {
-	width: 100px;
-	height: 300px;
+  width: 100px;
+  height: 300px;
 }
 
 .second-list {
-	flex: 1
+  flex-grow: 1
 }
 
 
 .second-footer {
-	width: 100%;
-	height: 150px;
-	border-right: 1px solid #000000;
+  width: 100%;
+  height: 150px;
+  border-right: 1px solid #000000;
 }
 
 .second-nav {
-	flex-grow: 1;
+  flex-grow: 35;
+  flex-basis: 0;
 }
 
